@@ -6,7 +6,7 @@ from openai import OpenAI
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Streamlit app title
-st.page_config(page_title="ChatGPT Chatbot")
+st.set_page_config(page_title="ChatGPT Chatbot")
 st.title("ChatGPT Chatbot")
 
 # Initialize session state for storing conversation history
